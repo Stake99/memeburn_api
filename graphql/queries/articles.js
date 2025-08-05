@@ -3,6 +3,7 @@ import { gql } from "graphql-request";
 export const GET_ARTICLES = gql `
     query getArticle {
         articles {
+            documentId
             title
             content
             description
