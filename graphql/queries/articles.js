@@ -1,4 +1,4 @@
-import { gql } from "graphql-request";
+import { gql } from "graphql-request"; // /api/upload/files/:id
 
 export const GET_ARTICLES = gql `
     query getArticle {
@@ -22,6 +22,7 @@ export const GET_ARTICLES = gql `
             slug
             views
             cover {
+                documentId
                 url
             }
         }

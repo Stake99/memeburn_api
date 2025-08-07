@@ -22,6 +22,7 @@ export const FIND_ARTICLES = gql `
             slug
             views
             cover {
+                documentId
                 url
             }
         }
