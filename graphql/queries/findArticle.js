@@ -13,6 +13,10 @@ export const FIND_ARTICLES = gql `
                 email
                 bio
                 slug
+                avatar {
+                    documentId
+                    url
+                }
             }
             category {
                 name
